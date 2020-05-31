@@ -4,7 +4,7 @@
   "description": "URL Shortener Service for FCC APIs & Mircoservices challenge",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/Peacha/pf-url-shortener/issues"
   },
-  "homepage": "https://github.com/Peacha/pf-url-shortener#readme"
+  "homepage": "https://github.com/Peacha/pf-url-shortener#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.5.8",
+    "mongoose": "^5.9.16"
+  }
 }

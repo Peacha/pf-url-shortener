@@ -1,0 +1,81 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: #f0f0f0;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+body #app-container {
+  color: #404040;
+  margin: auto;
+  max-width: 1000px;
+}
+body #app-container h1 {
+  text-align: center;
+  font-size: 2em;
+  margin: 0;
+}
+@media screen and (min-width: 600px) {
+  body #app-container h1 {
+    font-size: 3em;
+  }
+}
+body #app-container p {
+  text-align: center;
+}
+body #app-container #input-form {
+  width: 95%;
+  margin: auto;
+}
+@media screen and (min-width: 600px) {
+  body #app-container #input-form {
+    width: 100%;
+  }
+}
+body #app-container #input-form #url-input {
+  width: 85%;
+  padding: 5px;
+  margin-top: 10px;
+  width: 85%;
+  border-radius: 5px;
+  border: #c0c0c0 1px solid;
+}
+@media screen and (min-width: 600px) {
+  body #app-container #input-form #url-input {
+    width: 90%;
+  }
+}
+body #app-container #input-form #submit {
+  margin: 10 auto;
+  display: block;
+  padding: 8px;
+  font-size: 1.2em;
+  border: none;
+  background-color: #404040;
+  color: #f0f0f0;
+}
+body #app-container #contact {
+  text-align: center;
+}
+body #app-container #contact p {
+  font-size: 0.8em;
+}
+body #app-container #contact .link-container {
+  font-size: 2em;
+  margin: 5px;
+  transition: all 0.5s ease-in-out;
+}
+body #app-container #contact .link-container i:hover {
+  transform: scale(1.2);
+}
+body #app-container #contact .link-container:visited {
+  text-decoration: none;
+  color: #404040;
+}
+
+/*# sourceMappingURL=styles.css.map */

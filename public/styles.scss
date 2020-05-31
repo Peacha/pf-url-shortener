@@ -1,0 +1,91 @@
+
+
+@mixin medium {
+@media screen and (min-width:600px){
+@content;
+}
+}
+
+@mixin large-screen {
+@media screen and (min-width:1200px){
+@content;
+}
+}
+
+html,body{
+	margin:0;
+	padding:0;
+}
+body
+{
+	width:100vw;
+	height:100vh;
+	display:flex;
+	background-color:#f0f0f0;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	#app-container
+	{
+		color:#404040;
+		margin:auto;
+		max-width: 1000px;
+		h1{
+			text-align:center;
+			font-size:2em;
+			margin:0;
+			@include medium{
+				font-size:3em;
+			}
+		}
+		p{
+			text-align:center;
+		}
+		#input-form{
+			width:95%;
+			margin:auto;
+		    @include medium{
+			   width:100%; 	
+		    }
+			#url-input{
+				width:85%;
+			    padding:5px;
+			    margin-top:10px;
+			    width:85%;
+			    border-radius:5px;
+			    border:#c0c0c0 1px solid;
+			    @include medium{
+			    	width:90%;
+			    }
+			}
+			#submit{
+				margin:10 auto;
+				display:block;
+				padding:8px;
+				font-size:1.2em;
+				border:none;
+				background-color:#404040;
+				color:#f0f0f0;
+			}
+		}
+		#contact{
+			text-align:center;
+			p{
+				font-size:0.8em;
+			}
+			.link-container{
+				font-size:2em;
+				margin:5px;
+				transition:all .5s ease-in-out;
+			}
+			.link-container i:hover{
+				transform:scale(1.2);
+			}
+
+			.link-container:visited{
+				text-decoration: none;
+				color:#404040;
+			}
+		}
+	}
+}
+
+
