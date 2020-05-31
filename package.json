@@ -1,0 +1,27 @@
+{
+  "name": "pf-url-shortener",
+  "version": "1.0.0",
+  "description": "URL Shortener Service for FCC APIs & Mircoservices challenge",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Peacha/pf-url-shortener.git"
+  },
+  "keywords": [
+    "FreeCodeCamp",
+    "URL",
+    "shortener",
+    "Node",
+    "Express",
+    "MongoDB"
+  ],
+  "author": "Paul Finegan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Peacha/pf-url-shortener/issues"
+  },
+  "homepage": "https://github.com/Peacha/pf-url-shortener#readme"
+}
