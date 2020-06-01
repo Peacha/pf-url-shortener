@@ -2,4 +2,4 @@ runtime: nodejs10
 instance_class: F2
 env_variables:
   PORT: "443"
-  MONGO_URL: "MONGO_URI = 'mongodb+srv://theoraclemdb:n9hgeIsJ0dTZxqRf@cluster0-mbaut.gcp.mongodb.net/url-shortener?retryWrites=true&w=majoritys"
+  MONGO_URI: "mongodb+srv://theoraclemdb:n9hgeIsJ0dTZxqRf@cluster0-mbaut.gcp.mongodb.net/url-shortener?retryWrites=true&w=majoritys"

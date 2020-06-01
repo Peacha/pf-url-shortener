@@ -15,4 +15,4 @@ app.use("/api/shorturl",require('./routes/getURL.js'));
 app.use("/api/shorturl",require('./routes/newURL.js'));
 
 
-app.listen(3000,()=>console.log("URL Shortener Service is Listening....."))
+app.listen(process.env.PORT,()=>console.log("URL Shortener Service is Listening....."))
