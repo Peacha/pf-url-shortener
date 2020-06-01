@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const MONGO_URI = 'mongodb+srv://theoraclemdb:n9hgeIsJ0dTZxqRf@cluster0-mbaut.gcp.mongodb.net/url-shortener?retryWrites=true&w=majority'
 mongoose.connect(MONGO_URI,{useNewUrlParser:true,useUnifiedTopology:true})
 const Schema = mongoose.Schema
 const ShortUrlSchema = new Schema(
