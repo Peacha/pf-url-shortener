@@ -1,12 +1,18 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
+const bodyParser = require('body-parser');
 app.use(express.static(__dirname+"/public"));
-
-
+app.use(cors({optionSuccessStatus:200}));
+app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.json());
 
 app.route("/").get((req,res)=>{
-	res.sendfile(__dirname+"/views/index.html")
+	res.sendFile(__dirname+"/views/index.html")
 });
+
+app.use("/api/shorturl",require('./routes/getURL.js'));
+app.use("/api/shorturl",require('./routes/newURL.js'));
 
 
 app.listen(3000,()=>console.log("URL Shortener Service is Listening....."))
