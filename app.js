@@ -8,7 +8,6 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 
 app.route("/").get((req,res)=>{
-	console.log("received request");
 	res.sendFile(__dirname+"/views/index.html");
 });
 
